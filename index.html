@@ -9,37 +9,22 @@
 
     <body>
         <div id="calc-contain">
-            <div>
+            <div id="title">
                 <h1 id ="h1">My Tip Calculator</h1>
             </div>
             <div id="info-contain">
                 <div class="calc-row">
-                    <h2>Enter Amount:</h2>
-                    <input type="number" name="amount1" id="amount1">
-                    <input type="number" name="tip1" id="tip1" class="tip">
+                    <h2>Enter Bill Amount:</h2> &nbsp;
+                    $ <input type="number" name="amount1" id="amount1">
+                    <input type="number" name="tip1" id="tip1" class="tip"> % &nbsp;
                     <div>
-                        <p>= Result</p>
+                        <p id="result"> = <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></p> 
                     </div>
-                    <input type="submit" name="submit2" id="submit2">
+                    <input type="submit" name="submit1" id="submit1">
                 </div>
-                <div class="calc-row">
-                    <h2>Enter Amount:</h2>
-                    <input type="number" name="amount2" id="amount2">
-                    <input type="number" name="tip2" id="tip2" class="tip">
-                    <div>
-                        <p>= Result</p>
-                    </div>
-                    <input type="submit" name="submit2" id="submit2">
-                </div>
-                <div class="calc-row">
-                    <h2>Enter Amount:</h2>
-                    <input type="number" name="amount3" id="amount3">
-                    <input type="number" name="tip3" id="tip3" class="tip">
-                    <div>
-                        <p>= Result</p>
-                    </div>
-                    <input type="submit" name="submit2" id="submit2">
-                </div>
+            </div>
+            <div id = "total">
+                <h3>Total = <span id="totalNum">______</span> </h3>
             </div>
         </div>
     </body>
