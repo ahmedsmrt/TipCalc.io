@@ -32,7 +32,7 @@ h2 {
     position: relative;
     width: 100%;
     height: 30%;
-    background: url(WanderLust-1.jpg) center center/cover;
+    background: url("WanderLust-1.jpg") center center/cover;
     border-radius: 30px;
 }
 
