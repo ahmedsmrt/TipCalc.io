@@ -156,7 +156,27 @@ console.log(fullAge);
 
 
 let amt1 = document.querySelector('#amount1');
-let btn1 = document.querySelector('#submt')
-btn1.addEventListener(onclick(), {
-
+let tip1 = document.querySelector('#tip1');
+let btn1 = document.querySelector('#submit1');
+let result1 = document.querySelector('#result');
+let total = document.querySelector('#totalNum');
+btn1.addEventListener('click', () => {
+    if (amt1.value == '') {
+        alert('Please enter an amount!');
+    } else {
+        var calc = amt1.value *((tip1.value)/100);
+        var resultCalc = (amt1.value *((tip1.value)/100)).toFixed(2);
+        alert('Calculating....Please Wait.');
+        var totalCalc = ((calc + parseFloat(amt1.value, 2)));
+        total.innerHTML = `$ ${totalCalc.toFixed(2)}`;
+        result1.innerHTML = (`=$<span>${resultCalc}</span>`);
+            setTimeout(clearFields, 10000);
+    }
 });
+
+var clearFields = () => {
+    amt1.value = '';
+    tip1.value = '';
+    result1.innerHTML = `=  <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>`;
+    total.innerHTML = ` <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>`;
+};
